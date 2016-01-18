@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@hovercolor:#12D87B;
 html {
   height: 100%;
   overflow: hidden;
@@ -140,7 +139,7 @@ p {
   color:white;
 }
 .back a:hover{
-  color:@hovercolor;
+  color:#12D87B;
 }
 #menu {
   background-color: rgba(59, 149, 255, 0.63);
@@ -161,7 +160,7 @@ p {
   color:white;
 }
 #menu div a:hover {
-  color:@hovercolor;
+  color:#12D87B;
 }
 #title {
   background-image: url("images/landscape.jpeg");
