@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])
- consoleText(['J. Tanner Porter, I am a Full Stack Developer.', 'a passionate about what I do.', 'some who love learning new things.'], 'text',['tomato','rebeccapurple','lightblue']);
+ consoleText(['J. Tanner Porter, I am a Full Stack Developer.', 'passionate about what I do.', 'some who love learning new things.'], 'text',['tomato','rebeccapurple','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
