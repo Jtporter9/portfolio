@@ -154,6 +154,14 @@ font-weight: bold;
 .back a:hover{
   color:#12D87B;
 }
+.contact-pic {
+  width:17%;
+  position: absolute;
+  top:28%;
+  right:47%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px gray;
+}
 #menu {
   background-color: rgba(59, 149, 255, 0.63);
   padding:7px;
