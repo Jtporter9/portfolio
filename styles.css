@@ -97,6 +97,9 @@ p {
   padding:5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
+.title li {
+  font-size: 24px;
+}
 .title p{
 font-weight: bold;
 }
@@ -182,7 +185,7 @@ font-weight: bold;
   z-index:-1;
 }
 #slide2 {
-  /*background-image: url("images/SLC.jpg");*/
+  background-image: url("images/SLC.jpg");
   background-attachment: fixed;
 }
 #slide3:before {
