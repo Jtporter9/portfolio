@@ -125,12 +125,19 @@ font-weight: bold;
   color: white;
   text-shadow: 0 2px 2px #000;
 }
+.res-link {
+  position:relative;
+  color:black;
+}
+.res-link:hover {
+  color:blue;
+}
 .projects {
   text-align: center;
   position: absolute;
   right:30px;
   top:50px;
-  width: 38%;
+  width:500px;
   height: 700px;
   border-radius: 5px;
   background: rgba(240,230,220, .7);
