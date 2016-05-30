@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "homepage": "https://github.com/Jtporter9/portfolio",
+  "authors": [
+    "J. Tanner Porter <jtporter9@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "less": "~2.5.3"
+  }
+}
