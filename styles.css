@@ -1,18 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
-html {
-  height: 100%;
-  overflow: hidden;
-}
 body {
   margin:0;
   padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
   font-family: 'Poiret One', cursive;
+  background:url("images/landscape.jpeg") no-repeat center top fixed;
+  background-size: cover;
+}
+.background {
+	height: 650px;
+	background:url("images/landscape.jpeg") no-repeat center top fixed;
+  background-size: cover;
+	margin-top: 30px;
+}
+.background:first-child {
+	margin-top: 0;
+>>>>>>> master
 }
 .hidden {
   opacity:0;
@@ -24,9 +27,9 @@ body {
 .links {
   text-align:center;
   border-radius: 5px;
-  position: absolute;
+  position: relative;
   width: 100%;
-  top:465px;
+  top:260px;
 }
 .links a{
   text-decoration: none;
@@ -43,6 +46,8 @@ body {
   display:block;
   color:white;
   margin:auto;
+  position: relative;
+  top:100px;
 }
 .console-underscore {
   display:inline-block;
@@ -50,6 +55,22 @@ body {
   top:-0.14em;
   left:10px;
 }
+.skills-container {
+  background:url("images/dev-flat.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 99999;
+}
+.contact-container {
+  background:url("images/notebook-computer-chill-relax-large.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 99999;
+}
+/*.thank-you {
+  background-image: none;
+  background-color: rgb(61, 61, 61);
+}*/
 h1 {
    font-size: 250%
 }
@@ -64,7 +85,6 @@ p {
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
 	transform-style: inherit;
 }
 .img {
@@ -81,14 +101,6 @@ p {
 }
 .img:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
-}
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
 }
 .title {
   width: 50%;
@@ -108,17 +120,6 @@ font-weight: bold;
 }
 .title li a:hover {
   color:blue;
-}
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
-}
-.slide, .slide:before {
-  background: 50% 50% / cover;
 }
 .header {
   text-align: center;
@@ -178,6 +179,7 @@ font-weight: bold;
   position: fixed;
   top: 0;
   width:100%;
+  z-index: 99999999;
 }
 #menu div {
   margin-top: 7px;
@@ -189,25 +191,4 @@ font-weight: bold;
 }
 #menu div a:hover {
   color:#12D87B;
-}
-#title {
-  background-image: url("images/landscape.jpeg");
-   background-attachment: fixed;
-}
-#slide1:before {
-  background-image: url("images/dev-flat.jpg");
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
-}
-#slide2 {
-  background-image: url("images/SLC.jpg");
-  background-attachment: fixed;
-}
-#slide3:before {
-  background-image: url("images/notebook-computer-chill-relax-large.jpg");
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
-}
-#slide4 {
-  background: #222;
 }
