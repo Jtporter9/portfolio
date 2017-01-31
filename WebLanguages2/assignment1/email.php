@@ -26,6 +26,9 @@
 
       <div>
         <label>Subscribe to email list: (Radio Button) </label>
+        <span>Yes</span>
+        <input id="subscribe" type="radio" name="subscribe"/>        
+        <span>No</span>
         <input id="subscribe" type="radio" name="subscribe"/>
       </div>
 

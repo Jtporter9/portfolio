@@ -1,5 +1,9 @@
    <?php
 
+    error_reporting(-1);
+    ini_set('display_errors', 'On');
+    set_error_handler("var_dump");
+
     $email = $_POST['email'];
     $password = $_POST['password'];
     $subscribed = $_POST['subscribe'];
@@ -13,20 +17,40 @@
         $subscribed = "YES";
     }
 
+
+
+// xampp code fix      
+// ini_set( 'sendmail_from', "jtporter9@gmail.com" );
+// ini_set( 'SMTP', "	smtp-relay.gmail.com" );
+//     ini_set( 'smtp_port', 25 );
+
 //BUILD THE EMAIL
+
+$headers = 'From: jtporter9@gmail.com';
+
+//  . "\r\n" .
+//     'Reply-To: jtporter9@gmail.com' . "\r\n" .
+//     'X-Mailer: PHP/' . phpversion();
 
     $to = "jtporter9@gmail.com";
     $subject = "Web Languages to Assignment 1 Email Form";
 
-    $email_message = "Thank you for signing up! The following info was submitted\n\n Email: "
+    $message = "Thank you for signing up! The following info was submitted\n\n Email: "
     .$email."\nPassword: "
     .$password."\nSubscribed: "
-    .$subscribed."\nGender: "
+    .$subscribed."\nGender: "   
     .$gender."\nAbout you: "
     .$about_you."\n";
 // SEND THE EMAIL 
-    mail($to, $subject, $email_message, 'FROM'.$email);   
+    $foo = mail($to, $subject, $message);   
 
+if ($foo)
+{
+    $sent = " MESSAGE SENT";
+}
+else {
+        $sent = " FAILED TO SEND";
+}
     ?>
  
 <!DOCTYPE html>
@@ -50,6 +74,13 @@
             <p>Subscribed: ' . $subscribed . '</p>
             <p>Gender: ' . $gender . '</p>
             <p>About you: ' . $about_you . '</p>
+        </div>
+
+        <h3>' . $sent . ' to ' . $to . '</h3>
+        
+        <div>
+        <p>The Email should be as follows: <p/>
+        ' . $message . '
         </div>
       
     ';?>
