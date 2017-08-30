@@ -10,5 +10,4 @@ angular.module('app', ['ui.router'])
 				templateUrl: 'js/home/home.html',
 				controller: 'homeCtrl'
 			})
-
 	});
